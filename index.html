@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riders HUB - Bike Riding Site</title>
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/tablogo.png" sizes="512*512">
+    
+    <style>
+        .box {
+            position: relative;
+        }
+        /* Default Title visible at the bottom */
+        .card-title-default {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            text-align: center;
+            z-index: 1;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .card-title-default h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,1);
+            margin: 0;
+        }
+        /* Hide the title completely when hovered */
+        .box:hover .card-title-default {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        /* Style adjustments for the overlay content */
+        .overlay {
+            justify-content: center; /* Centers the text and button perfectly */
+        }
+        .overlay p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/klogo.png" alt="Riders HUB Logo"> Riders<span>HUB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html" target="blank">About Us</a></li>
+            <li><a href="#contact-footer">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+        <section class="slider">
+            
+            <div class="slide active">
+                <img src="images/66.jpg" alt="Master the Asphalt">
+                <div class="slide-content">
+                    <h1>Master the Asphalt</h1>
+                    <p>70% of motorcycle accidents occur at intersections. Ride defensively, stay highly visible, and always anticipate the unexpected.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/22.jpg" alt="Armor Up">
+                <div class="slide-content">
+                    <h1>Armor Up, Ride Hard</h1>
+                    <p>A certified helmet reduces the risk of fatal injury by 37%. Your gear is your absolute first line of defense—never compromise on safety.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/11.jpg" alt="The Art of Cornering">
+                <div class="slide-content">
+                    <h1>The Art of Cornering</h1>
+                    <p>Look exactly where you want to go. Overcoming target fixation is the ultimate secret to carving through tight corners with smooth precision.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/44.jpg" alt="Respect the Machine">
+                <div class="slide-content">
+                    <h1>Respect the Machine</h1>
+                    <p>Tire pressure dictates your handling more than anything else. Checking your PSI weekly guarantees maximum grip and road stability.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/Gemini_Generated_Image_xbm4u5xbm4u5xbm4.png" alt="Beyond the Horizon">
+                <div class="slide-content">
+                    <h1>Beyond the Horizon</h1>
+                    <p>Motorcycling is more than speed—it's mental clarity. Studies show riding reduces stress biomarkers by 28%, keeping your mind as sharp as your reflexes.</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar active"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+            </div>
+        </section>
+     
+
+    <section class="intro-section">
+        <div class="container">
+            <h2>Ride With Intelligence</h2>
+            <div class="divider"></div>
+            <p>Mastering a motorcycle is not just about speed; it's about discipline, safety,
+            and the right habits. Whether you're a city cruiser or a mountain explorer,
+            we provide the ultimate guide to professional riding methods and safety protocols for every rider.</p>
+        </div>
+    </section>
+
+    <section class="purpose-section">
+        <div class="purpose-container">
+            <div class="purpose-image">
+                <img src="images/main.jpg" alt="Riding Methods">
+            </div>
+            <div class="purpose-text">
+                <span class="subtitle">About RidersHub</span>
+                <h2>Our Mission: Safer Roads, Smarter Riders</h2>
+                <p>
+                    At <strong>RidersHub</strong>, we believe that riding a motorcycle is a skill that requires constant refinement. Whether you are a beginner or a seasoned pro, our platform is dedicated to teaching the <strong>essential habits</strong> and <strong>technical methods</strong> required for every type of bike.
+                </p>
+                <div class="purpose-tags">
+                    <div class="tag"><i class="fa fa-check"></i> Safety Habits</div>
+                    <div class="tag"><i class="fa fa-check"></i> Riding Techniques</div>
+                    <div class="tag"><i class="fa fa-check"></i> Maintenance Tips</div>
+                    <div class="tag"><i class="fa fa-check"></i> Road Psychology</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lifestyle-section">
+        <div class="lifestyle-container">
+            <div class="lifestyle-header">
+                <h2>The Rider's Lifestyle</h2>
+                <div class="divider"></div>
+                <p>Choosing to ride a motorcycle is more than just a means of getting from place to place; it is an embracing of a unique lifestyle that offers an unparalleled sense of freedom and exhilaration. Beyond the thrill of the open road, the benefits that bike rides give us are extensive, encompassing physical, mental, and practical advantages.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-box">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h3>Moto-Meditation</h3>
+                    <p>Mentally, motorcycling acts as a powerful stress reliever and a form of active meditation, often termed "moto-meditation," which can decrease cortisol levels while boosting cognitive function, focus, and visual alertness.</p>
+                </div>
+                
+                <div class="benefit-box">
+                    <i class="fa fa-heartbeat"></i>
+                    <h3>Physical Engagement</h3>
+                    <p>Physically, it requires active engagement, providing a low-impact full-body workout that strengthens the core, legs, back, and neck, improves balance and coordination, and burns more calories than driving a car.</p>
+                </div>
+                
+                <div class="benefit-box">
+                    <i class="fa fa-dashboard"></i>
+                    <h3>Practical Agility</h3>
+                    <p>From a practical perspective, motorcycles offer superior fuel efficiency, making them a cost-effective alternative to larger vehicles, and their compact agility allows riders to maneuver through traffic easily and find parking effortlessly, reducing both travel time and daily commuting costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="card-area">
+        <div class="wrapper">
+            <div class="box-area">
+                
+                <div class="box">
+                    <img src="images/01.jpg" alt="Bike">
+                    <div class="card-title-default">
+                        <h3>Maintenance Tips</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Essential bike care like oil checks, tire pressure, and chain maintenance.</p>
+                        <a href="maintainence.html" class="book-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/02.jpg" alt="Medical First Aid">
+                    <div class="card-title-default">
+                        <h3>Trauma & First Aid</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Basic first aid steps every rider should know during emergencies.</p>
+                        <a href="medic.html" class="book-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/03.jpg" alt="Bike">
+                    <div class="card-title-default">
+                        <h3>Parts & Upgrades</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Upgrade your bike with performance parts and better components.</p>
+                        <a href="parts.html" class="book-btn">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/04.jpg" alt="Bike">
+                    <div class="card-title-default">
+                        <h3>Riding Techniques</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Learn better cornering, braking, and control for safer riding.</p>
+                        <a href="technique.html" class="book-btn">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/05.jpg" alt="Bike">
+                    <div class="card-title-default">
+                        <h3>Mindset & Habits</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Build smart riding habits and defensive road awareness.</p>
+                        <a href="habbits.html" class="book-btn">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/06.jpg" alt="Bike">
+                    <div class="card-title-default">
+                        <h3>Armor & Gear</h3>
+                    </div>
+                    <div class="overlay">
+                        <p>Protect yourself with proper helmets, jackets, and riding gear.</p>
+                        <a href="gear.html" class="book-btn">See More</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="rider-footer" id="contact-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/klogo.png" alt="Riders HUB Logo"> Riders<span>HUB</span>
+                </div>
+                <p>Ride free. Ride far. Ride together.</p>
+                
+                <div class="social-icons">
+                    <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                    <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                    <a href="javascript:void(0);"><i class="fa fa-youtube-play"></i></a>
+                    <a href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="link-column">
+                    <h4>Team Members</h4>
+                    <a href="javascript:void(0);">Himal Theminda</a>
+                    <a href="javascript:void(0);">Kavindu Wijesingha</a>
+                    <a href="javascript:void(0);">Lasith Randika</a>
+                    <a href="javascript:void(0);">Achintha Isuru</a>
+                    <a href="javascript:void(0);">Randunu Nimesha Sandesh</a>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Contact Us</h4>
+                    <address>
+                    <a href="tel:+9477123675">+94 77123675</a><br>
+                    <a href="tel:+9478765913">+94 78765913</a><br>
+                    <a href="mailto:riderhub@gmail.com">riderhub1111@gmail.com</a>
+                    </address>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 RoadPulse – All roads lead here. Ride safe.
+            </div>
+            <div class="legal">
+                <a href="javascript:void(0);">Privacy Policy</a>
+                <a href="javascript:void(0);">Terms of Use</a>
+                <a href="javascript:void(0);">Cookie Notice</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Existing Slider Logic ---
+        let slides = document.querySelectorAll(".slide");
+        let bars = document.querySelectorAll(".progress-bar");
+        let index = 0;
+
+        function nextSlide() {
+            slides[index].classList.remove("active");
+            bars[index].classList.remove("active");
+            
+            index = (index + 1) % slides.length;
+            
+            slides[index].classList.add("active");
+            bars[index].classList.add("active");
+        }
+
+        // SLOWED DOWN TRANSITION: 5000ms = 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // --- Fade Out Nav Logo on Scroll & Change Link Colors ---
+        const navBar = document.querySelector('nav');
+        const navLogo = document.querySelector('nav .logo');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navLogo.style.opacity = '0';
+                navLogo.style.visibility = 'hidden';
+                navBar.classList.add('scrolled');
+            } else {
+                navLogo.style.opacity = '1';
+                navLogo.style.visibility = 'visible';
+                navBar.classList.remove('scrolled');
+            }
+        });
+
+        // --- Mobile Menu Toggle Addded Here ---
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinksList = document.querySelector('.nav-links');
+        const menuIcon = document.querySelector('.menu-toggle i');
+
+        menuToggle.addEventListener('click', () => {
+            navLinksList.classList.toggle('active');
+            
+            // Switch the icon between ☰ (bars) and ✖ (close)
+            if (navLinksList.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+    </script>
+
+</body>
+</html>
